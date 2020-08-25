@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Materialize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA==" crossorigin="anonymous" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    <!-- Material Icon set -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="./assets/script/script.js">
+    </script>
+    <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <meta charset="utf-8" />
-    <title>Nancy's Bio</title>
+
+    <title>Nancy Lambert, developer</title>
 </head>
 
 <body>
-    <h1>Student Bio</h1>
-    <h2>Nancy Lambert-Brown</h2>
-    <p>
-        <img src="https://via.placeholder.com/200x200" alt="A placeholder image that says 200 by 200" />
-    </p>
-    <p>
-        I am currently an IAM support engineer based in San Diego, CA. I script
-        login flows for customers wishing to integrate form-based authentication
-        sites in a Single-Sign On environment.
-    </p>
-    <p>
-        I have about 20 years of experience in web development, data analsis,
-        database administration, server administration, network administration,
-        and customer success. I am looking forward to getting back into full stack
-        development because I enjoy making things.
-    </p>
-    <h2>Contact Info</h2>
-    <ul>
-        <li>
-            <strong>Email:</strong><a href="mailto:nlambert@not-my-mail">nlambert@not-a-real-mail.com</a>
-        </li>
-        <li>
-            <strong>Github:</strong><a href="https://github.com/n-lambert" target="_blank">n-lambert</a>
-        </li>
-        <li><strong>Portfolio:</strong><a href="#">coming soon</a></li>
-    </ul>
-    ul>
-</body>
+    <!-- Navbar -->
+    <header>
+        <nav class="nav-wrapper blue accent-1">
+            <a href="./index.html" class="brand-logo">Nancy Lambert</a>
+            <a href="./index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active">
+                    <a href="./index.html">About</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li class="active">
+                <a href="./index.html">About</a>
+            </li>
+            <li>
+                <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- Main Content -->
+    <main class="container white z-depth-3">
+        <!-- main content with two rows separated by a horizontal rule
+            This section contains an About me header, an image of me, and a brief summary -->
+        <section class="row">
+            <div class="col">
+                <!-- float the figure left on larger screens -->
+                <figure>
+                    <img src="./assets/images/NLB.png" class="circle z-depth-4" alt="Headshot of Nancy Lambert, full stack developer">
+                </figure>
+                <p>
+                    Hi! I'm Nancy and I enjoy hacking things.
+                </p>
+                <p>
+                    I'm a maker at heart and spend my free time figuring out how things work and making everything from costumes to robotic assistants in the IOT.
+                </p>
+                <p>
+                    Currently I work as an IAM support engineer for OneLogin based in San Diego, CA. I currently spend my days scripting login flows for customers wishing to integrate form-based authentication sites in a Single-Sign On environment.
+                </p>
+                <p>
+                    Throughout the past 20 years I have gained experience in web development, data analsis, database administration, system administration, and customer success. I am looking forward to expanding my skillset into full stack development.
+                </p>
+            </div>
+        </section>
+    </main>
+   <!-- footer section: sticky footer-->
+   <footer class="page-footer blue accent-1">
+    <div class="footer-copyright">
+        <span class="container center">&copy;2020 Nancy Lambert</span>
+    </div>
+</footer>
 
+</body>
 </html>
